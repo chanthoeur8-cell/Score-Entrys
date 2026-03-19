@@ -66,7 +66,6 @@ body {
 .class-tab:hover { background: #dce9ff; }
 .class-tab.active { background: #2563b0; color: white; }
 
-/* Result grade tabs (different style) */
 .res-grade-tabs {
   display: flex; gap: 6px; flex-wrap: wrap;
   padding: 0 0 12px 0;
@@ -173,7 +172,6 @@ body {
 .lb-class { font-size: 12px; color: #666; }
 .lb-score { font-size: 18px; font-weight: bold; color: #2563b0; }
 
-/* ===== RESULTS CONTROLS ===== */
 .results-controls-bar {
   background: white; border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
@@ -182,7 +180,6 @@ body {
 }
 .results-controls-bar label { font-weight: bold; color: #1a3a6b; font-size: 14px; }
 
-/* ===== REPORT ===== */
 .report-wrap {
   background: white; border-radius: 10px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.12);
@@ -236,7 +233,6 @@ body {
   margin-bottom: 12px;
 }
 
-/* Results table */
 .rpt-table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-bottom: 14px; }
 .rpt-table th {
   background: #1a3a6b; color: white;
@@ -283,7 +279,6 @@ body {
 }
 .toast.show { opacity: 1; transform: translateY(0); }
 
-/* ===== CERTIFICATE — Premium Redesign ===== */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&display=swap');
 
 :root {
@@ -313,7 +308,6 @@ body {
   gap: 32px; max-width: 1040px; margin: 0 auto 28px;
 }
 
-/* ── Main card shell ── */
 .certificate {
   position: relative;
   background: var(--cream);
@@ -325,7 +319,6 @@ body {
   overflow: visible;
 }
 
-/* Decorative outer border system */
 .cert-border-outer {
   position: absolute; inset: -2px;
   border: 2px solid var(--gold);
@@ -336,7 +329,6 @@ body {
   border: 1px solid rgba(201,168,76,0.4);
   pointer-events: none; z-index: 20;
 }
-/* Corner ornaments via pseudo */
 .cert-border-inner::before,
 .cert-border-inner::after {
   content: '◆';
@@ -346,7 +338,6 @@ body {
 .cert-border-inner::before { top: -6px; left: 50%; transform: translateX(-50%); }
 .cert-border-inner::after  { bottom: -6px; left: 50%; transform: translateX(-50%); }
 
-/* ── TOP RIBBON  ── */
 .cert-ribbon {
   position: relative;
   background: var(--navy);
@@ -355,8 +346,6 @@ body {
   min-height: 110px;
   display: flex; flex-direction: column;
 }
-
-/* Subtle crosshatch texture */
 .cert-ribbon::before {
   content: '';
   position: absolute; inset: 0;
@@ -365,15 +354,11 @@ body {
     repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0px, transparent 1px, transparent 12px);
   z-index: 0;
 }
-
-/* Gold top stripe */
 .cert-ribbon-top-stripe {
   height: 5px;
   background: linear-gradient(90deg, var(--navy), var(--gold), var(--gold-light), var(--gold), var(--navy));
   flex-shrink: 0;
 }
-
-/* Ribbon content */
 .cert-ribbon-content {
   position: relative; z-index: 2;
   display: flex; align-items: center;
@@ -398,15 +383,11 @@ body {
   color: var(--gold-light); text-transform: uppercase;
   margin-top: 3px; opacity: 0.9;
 }
-
-/* Gold bottom stripe of ribbon */
 .cert-ribbon-bottom {
   height: 4px; flex-shrink: 0;
   background: linear-gradient(90deg, var(--navy), var(--gold-light), var(--gold), var(--gold-light), var(--navy));
 }
 
-/* ── MEDAL BADGE  ── */
-/* Centered medal hanging below ribbon */
 .cert-medal-badge {
   display: flex; flex-direction: column;
   align-items: center; margin: -10px 0 0;
@@ -425,15 +406,12 @@ body {
   margin-bottom: 0;
 }
 
-/* ── BODY ── */
 .cert-body {
   position: relative; z-index: 2;
   padding: 10px 36px 24px;
   text-align: center;
   background: linear-gradient(180deg, var(--cream) 0%, #fff 55%, var(--parchment) 100%);
 }
-
-/* Faint seal watermark */
 .cert-seal {
   position: absolute;
   top: 50%; left: 50%;
@@ -453,7 +431,6 @@ body {
   white-space: nowrap;
 }
 
-/* Rank label */
 .cert-rank-label {
   display: inline-block;
   font-family: 'Cinzel', 'Georgia', serif;
@@ -469,7 +446,6 @@ body {
   opacity: 0.6;
 }
 
-/* Certificate titles */
 .cert-title-km {
   font-family: 'Moul', 'Khmer OS Muol Light', serif;
   font-size: 24px; font-weight: 400;
@@ -487,7 +463,6 @@ body {
   margin-bottom: 10px; opacity: 0.9;
 }
 
-/* Gold ornament row */
 .cert-ornament {
   display: flex; align-items: center;
   gap: 8px; margin: 6px auto 10px;
@@ -502,7 +477,6 @@ body {
 }
 .cert-ornament-gem { font-size: 12px; color: var(--gold); }
 
-/* Event tag */
 .cert-event-tag {
   display: inline-block;
   background: var(--navy);
@@ -516,7 +490,6 @@ body {
   margin-bottom: 3px; font-style: italic;
 }
 
-/* Student name — the STAR */
 .cert-name {
   font-family: 'Moul', 'Khmer OS Muol Light', serif;
   font-size: 20px; font-weight: 400;
@@ -539,7 +512,6 @@ body {
 }
 .cert-meta-dot { color: var(--gold); }
 
-/* Score display — large, proud */
 .cert-score-display {
   display: inline-flex;
   align-items: center; gap: 0;
@@ -562,7 +534,6 @@ body {
 .cert-score-slash { font-size: 14px; opacity: 0.5; margin: 0 1px; }
 .cert-score-max   { font-size: 14px; opacity: 0.7; }
 
-/* Nittoes badge */
 .cert-nit-badge {
   display: inline-block; padding: 4px 20px;
   font-size: 13px; font-weight: 700; margin: 2px 0 14px;
@@ -570,7 +541,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* ── FOOTER ── */
 .cert-footer-divider {
   height: 1px; margin: 4px 0 12px;
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
@@ -592,8 +562,6 @@ body {
   font-family: 'IM Fell English', Georgia, serif;
 }
 
-/* ── Rank accent themes ── */
-/* Gold / 1st */
 .cert-rank-1 { --accent: #C9A84C; --accent-light: #E8C96A; --accent-pale: #FDF6E0; }
 .cert-rank-1 .cert-ribbon { background: linear-gradient(160deg, #3D2200 0%, #7A4A00 35%, #B87A00 65%, #7A4A00 100%); }
 .cert-rank-1 .cert-ribbon-top-stripe,
@@ -606,7 +574,6 @@ body {
 .cert-rank-1 .cert-score-value  { background: #FDF0CC; }
 .cert-rank-1 .cert-name-underline { background: linear-gradient(90deg, transparent, #C9A84C, #FFE066, #C9A84C, transparent); }
 
-/* Silver / 2nd */
 .cert-rank-2 { --accent: #909090; }
 .cert-rank-2 .cert-ribbon { background: linear-gradient(160deg, #1a1a2a 0%, #3a3a5a 35%, #5a5a7a 65%, #3a3a5a 100%); }
 .cert-rank-2 .cert-ribbon-top-stripe,
@@ -625,7 +592,6 @@ body {
 .cert-rank-2 .cert-footer-divider { background: linear-gradient(90deg, transparent, #A0A0B8, transparent); }
 .cert-rank-2 .cert-sig-line { border-color: #A0A0B8; }
 
-/* Bronze / 3rd */
 .cert-rank-3 { --accent: #B06030; }
 .cert-rank-3 .cert-ribbon { background: linear-gradient(160deg, #2a1000 0%, #6b3000 35%, #9b5010 65%, #6b3000 100%); }
 .cert-rank-3 .cert-ribbon-top-stripe,
@@ -644,130 +610,37 @@ body {
 .cert-rank-3 .cert-footer-divider { background: linear-gradient(90deg, transparent, #B06030, transparent); }
 .cert-rank-3 .cert-sig-line { border-color: #B06030; }
 
-/* 4th & 5th stay navy */
 .cert-rank-4 .cert-ribbon,
 .cert-rank-5 .cert-ribbon { background: linear-gradient(160deg, #061228 0%, var(--navy-mid) 50%, #061228 100%); }
 
-
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
-/* ===== PRINT ===== */
 @media print {
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-
   body { background: white !important; margin: 0; padding: 0; }
-
-  /* Hide all UI chrome */
   .app-header, .page-nav, .judge-bar, .class-tabs,
   .action-bar, .leaderboard, .summary-panel,
   .results-controls-bar, .pdf-bar, .toast,
   .cert-filter-bar, #page-scoring,
   .res-grade-tabs { display: none !important; }
-
   #page-results.active { display: block !important; }
   #page-cert.active    { display: block !important; }
   .content { padding: 0 !important; }
-
-  /* ── RESULTS TABLE — fill full A4 ── */
   .report-wrap {
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    padding: 8mm 10mm !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    margin: 0 !important;
-    page-break-inside: auto;
+    box-shadow: none !important; border-radius: 0 !important;
+    padding: 8mm 10mm !important; max-width: 100% !important;
+    width: 100% !important; margin: 0 !important;
   }
-  .rpt-table {
-    width: 100% !important;
-    font-size: 11px !important;
-    table-layout: fixed;
-  }
+  .rpt-table { width: 100% !important; font-size: 11px !important; table-layout: fixed; }
   .rpt-table th { background: #1a3a6b !important; color: white !important; font-size: 10.5px !important; padding: 5px 4px !important; }
   .rpt-table td { padding: 5px 4px !important; font-size: 11px !important; }
   .rpt-table tr:nth-child(even) td { background: #f0f4ff !important; }
   .rpt-table tr { page-break-inside: avoid; }
-  .rank-circle { width: 22px !important; height: 22px !important; line-height: 22px !important; font-size: 11px !important; }
-  .nittoes { font-size: 10px !important; padding: 2px 6px !important; }
-  .rpt-stats { background: #f5f8ff !important; font-size: 11px !important; padding: 6px 10px !important; }
-  .rpt-logo-circle { width: 65px !important; height: 65px !important; }
-  .rpt-title-box h2 { font-size: 15px !important; }
-  .rpt-sigs { margin-top: 20px !important; }
-
-  /* Grade-section headers inside grade loop */
-  .grade-section-header { page-break-before: always; }
-  .grade-section-header:first-child { page-break-before: auto; }
-
-  /* ── CERTIFICATES — 1 per page, full A4 ── */
-  .cert-grid {
-    display: block !important; /* stack them, not grid */
-  }
-  .cert-grid > div {
-    /* each cert wrapper = full page */
-    display: block !important;
-    page-break-before: always;
-    page-break-after: always;
-    break-before: page;
-    break-after: page;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .cert-grid > div:first-child {
-    page-break-before: auto;
-    break-before: auto;
-  }
-
-  /* Certificate fills the page */
-  .certificate {
-    width: 100% !important;
-    height: calc(297mm - 20mm) !important; /* A4 height minus margins */
-    min-height: unset !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    overflow: hidden !important;
-  }
-  .cert-body {
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    padding: 16px 48px 24px !important;
-  }
-  .cert-ribbon { flex-shrink: 0; }
-  .cert-ribbon-content { padding: 20px 40px 18px !important; }
-  .cert-ribbon-logo { width: 70px !important; height: 70px !important; }
-  .cert-ribbon-km   { font-size: 18px !important; }
-  .cert-ribbon-en   { font-size: 11px !important; }
-  .cert-medal-circle { width: 80px !important; height: 80px !important; font-size: 48px !important; }
-  .cert-title-km    { font-size: 36px !important; }
-  .cert-title-en    { font-size: 13px !important; letter-spacing: 6px !important; }
-  .cert-name        { font-size: 30px !important; }
-  .cert-name-underline { max-width: 400px !important; margin: 0 auto 14px !important; }
-  .cert-score-display { transform: scale(1.15); transform-origin: center; margin: 8px 0 12px !important; }
-  .cert-score-value   { font-size: 28px !important; }
-  .cert-nit-badge   { font-size: 16px !important; padding: 6px 28px !important; }
-  .cert-rank-label  { font-size: 13px !important; margin-bottom: 12px !important; }
-  .cert-event-tag   { font-size: 12px !important; padding: 5px 20px !important; margin-bottom: 16px !important; }
-  .cert-presents    { font-size: 14px !important; margin-bottom: 4px !important; }
-  .cert-meta        { font-size: 13px !important; }
-  .cert-footer      { padding: 0 20px !important; }
-  .cert-sig-line    { width: 130px !important; }
-  .cert-sig-name    { font-size: 14px !important; }
-  .cert-footer-date { font-size: 13px !important; }
-
-  /* Grade section label between cert groups */
-  .cert-grade-section-label { display: none !important; }
-  .cert-area-wrap { max-width: 100% !important; margin: 0 !important; }
-
-  /* Color backgrounds MUST print */
-  .cert-ribbon, .cert-ribbon-top-stripe, .cert-ribbon-bottom,
-  .cert-border-outer, .cert-border-inner,
-  .cert-score-display, .cert-score-label, .cert-score-value,
-  .cert-nit-badge, .cert-event-tag, .cert-seal,
-  .cert-medal-circle { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-
+  .cert-grid { display: block !important; }
+  .cert-grid > div { display: block !important; page-break-before: always; break-before: page; margin: 0 !important; padding: 0 !important; }
+  .cert-grid > div:first-child { page-break-before: auto; break-before: auto; }
+  .certificate { width: 100% !important; height: calc(297mm - 20mm) !important; min-height: unset !important; box-shadow: none !important; display: flex !important; flex-direction: column !important; overflow: hidden !important; }
+  .cert-body { flex: 1 !important; display: flex !important; flex-direction: column !important; justify-content: center !important; padding: 16px 48px 24px !important; }
   @page { margin: 10mm; size: A4 portrait; }
 }
 
@@ -792,7 +665,6 @@ body {
   <button id="nav-cert"    onclick="showPage('cert',this)">🏅 បត្រសរសើរ</button>
 </div>
 
-<!-- =================== SCORING =================== -->
 <div id="page-scoring" class="page active">
   <div class="judge-bar">
     <label>👤 ខ្ញុំជា:</label>
@@ -830,7 +702,6 @@ body {
   </div>
 </div>
 
-<!-- =================== RESULTS =================== -->
 <div id="page-results" class="page">
   <div class="content">
     <div class="results-controls-bar">
@@ -839,7 +710,6 @@ body {
         ពិន្ទុ​ចែករំលែក​ដោយ​គណៈ​កម្ម​ការ​ទាំង​ ៥
       </span>
     </div>
-    <!-- Grade tabs for results -->
     <div class="res-grade-tabs" id="resGradeTabs"></div>
     <div id="reportArea"></div>
     <div class="pdf-bar">
@@ -849,7 +719,6 @@ body {
   </div>
 </div>
 
-<!-- =================== CERTIFICATES =================== -->
 <div id="page-cert" class="page">
   <div class="content">
     <div class="cert-filter-bar">
@@ -875,6 +744,65 @@ body {
 <div class="toast" id="toast"></div>
 
 <script>
+// ================================================================
+// ⚙️  FIREBASE CONFIG — ដាក់ URL របស់អ្នកនៅទីនេះ
+// ================================================================
+const FIREBASE_URL = 'https://mikids-scores-default-rtdb.firebaseio.com';
+// ឧទាហរណ៍: 'https://mikids-scores-default-rtdb.firebaseio.com'
+// ================================================================
+
+const DB_PATH = '/mikids-scores-v2.json';
+
+async function fbGet() {
+  try {
+    const r = await fetch(FIREBASE_URL + DB_PATH);
+    if (!r.ok) return null;
+    const data = await r.json();
+    return data || {};
+  } catch(e) { return null; }
+}
+
+async function fbSet(data) {
+  try {
+    const r = await fetch(FIREBASE_URL + DB_PATH, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    return r.ok;
+  } catch(e) { return false; }
+}
+
+async function loadSharedScores() {
+  // Try Firebase first
+  const remote = await fbGet();
+  if (remote && Object.keys(remote).length > 0) {
+    // Cache locally
+    try { localStorage.setItem('mikids-fb-cache', JSON.stringify(remote)); } catch(e) {}
+    return remote;
+  }
+  // Fallback: localStorage cache (offline mode)
+  try {
+    const v = localStorage.getItem('mikids-fb-cache');
+    if (v) return JSON.parse(v);
+  } catch(e) {}
+  return {};
+}
+
+async function persistScores() {
+  const d = JSON.stringify(scores);
+  if (d === lastSavedHash) return;
+  lastSavedHash = d;
+  // Save to Firebase (real-time sync across all devices)
+  const ok = await fbSet(scores);
+  // Also cache locally
+  try { localStorage.setItem('mikids-fb-cache', d); } catch(e) {}
+  return ok;
+}
+
+// ================================================================
+// DATA
+// ================================================================
 const allStudents = [
   {no:1,  name:'ងួន បញ្ញាពុទ្ធិស័ក្តិ', sex:'ប', grade:'ថ្នាក់ទី១', code:'01.01', disp:'០១.១'},
   {no:2,  name:'ឆន វិរៈសិទ្ធ',           sex:'ប', grade:'ថ្នាក់ទី១', code:'01.02', disp:'០១.២'},
@@ -930,47 +858,21 @@ const GRADE_LIST = ['ថ្នាក់ទី១','ថ្នាក់ទី២',
 const KH_MONTHS  = ['មករា','កុម្ភៈ','មីនា','មេសា','ឧសភា','មិថុនា','កក្កដា','សីហា','កញ្ញា','តុលា','វិច្ឆិកា','ធ្នូ'];
 
 let currentGrade = 'ទាំងអស់';
-let currentJudge = '1';        // which judge AM I (for marking my inputs)
+let currentJudge = '1';
 let currentResGrade = 'all';
-let scores = {};               // ALL scores from ALL judges — shared pool
+let scores = {};
 let lastSavedHash = '';
 let pollTimer = null;
 
-// ================================================================
-// STORAGE — single shared key for all judges
-// ================================================================
-const SHARED_KEY = 'mikids-shared-v2';
-
-async function loadSharedScores() {
-  try {
-    const r = await window.storage.get(SHARED_KEY, true); // shared=true
-    if (r && r.value) return JSON.parse(r.value);
-  } catch(e) {}
-  try {
-    const v = localStorage.getItem(SHARED_KEY);
-    if (v) return JSON.parse(v);
-  } catch(e) {}
-  return {};
-}
-
-async function persistScores() {
-  const d = JSON.stringify(scores);
-  if (d === lastSavedHash) return; // no change, skip
-  lastSavedHash = d;
-  try { await window.storage.set(SHARED_KEY, d, true); } catch(e) {} // shared=true
-  try { localStorage.setItem(SHARED_KEY, d); } catch(e) {}
-}
-
-// Legacy per-judge loader (for results page judge filter — now same data)
-async function loadScores(j) { return await loadSharedScores(); }
-
-// ================================================================
-// INIT + LIVE POLLING
-// ================================================================
 window.onload = async () => {
-  // Try to remember which judge I was last time
   try { currentJudge = localStorage.getItem('mikids-my-judge') || '1'; } catch(e) {}
   document.getElementById('judgeSelect').value = currentJudge;
+
+  if (FIREBASE_URL === 'YOUR_FIREBASE_URL_HERE') {
+    showToast('⚠️ សូមដាក់ Firebase URL ក្នុង code!');
+    document.getElementById('liveStatus').textContent = '⚠️ Firebase URL មិនទាន់ដាក់';
+    document.getElementById('liveDot').style.background = '#e53e3e';
+  }
 
   buildTabs();
   buildResGradeTabs();
@@ -980,24 +882,24 @@ window.onload = async () => {
   updateSummary();
   updateLeaderboard();
 
-  // Poll every 4 seconds for updates from other judges
   startPolling();
 };
 
 function startPolling() {
   clearInterval(pollTimer);
   pollTimer = setInterval(async () => {
+    if (FIREBASE_URL === 'YOUR_FIREBASE_URL_HERE') return;
     try {
-      const remote = await loadSharedScores();
+      const remote = await fbGet();
+      if (!remote) return;
       const remoteStr = JSON.stringify(remote);
       if (remoteStr !== lastSavedHash) {
-        // Merge: remote wins for other judges' entries, keep my edits
         scores = remote;
         lastSavedHash = remoteStr;
+        try { localStorage.setItem('mikids-fb-cache', remoteStr); } catch(e) {}
         renderTable();
         updateSummary();
         updateLeaderboard();
-        // Flash live indicator
         const dot = document.getElementById('liveDot');
         const st  = document.getElementById('liveStatus');
         if (dot) { dot.style.background = '#f6c23e'; }
@@ -1011,9 +913,6 @@ function startPolling() {
   }, 4000);
 }
 
-// ================================================================
-// PAGE NAV
-// ================================================================
 function showPage(page, btn) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.page-nav button').forEach(b => b.classList.remove('active'));
@@ -1030,9 +929,6 @@ function switchJudge() {
   showToast('ឥឡូវ​អ្នក​ជា គណៈ​កម្ម​ការ​ទី ' + currentJudge);
 }
 
-// ================================================================
-// SCORING TABLE
-// ================================================================
 function buildTabs() {
   const wrap = document.getElementById('classTabs');
   wrap.innerHTML = '';
@@ -1140,10 +1036,10 @@ function getTotal(code, sc_) {
 }
 
 async function saveAllScores() {
-  await persistScores();
+  const ok = await persistScores();
   const dot=document.getElementById('saveDot'), st=document.getElementById('saveStatus');
   dot.className='save-dot saved';
-  st.textContent='គ.ក.ទី' + currentJudge + ' រក្សា​ទុក​ហើយ ✓';
+  st.textContent = ok ? 'Firebase ✓ រក្សា​ទុក​ហើយ' : 'Local cache ✓';
   setTimeout(()=>{ dot.className='save-dot'; st.textContent='រក្សា​ទុក​ស្វ័យ​ប្រវត្តិ'; },3000);
 }
 
@@ -1188,9 +1084,6 @@ function updateLeaderboard() {
     </div>`).join('');
 }
 
-// ================================================================
-// RESULTS — Grade Tabs
-// ================================================================
 function buildResGradeTabs() {
   const wrap = document.getElementById('resGradeTabs');
   wrap.innerHTML = '';
@@ -1206,7 +1099,7 @@ function buildResGradeTabs() {
 
 async function renderResults() {
   buildResGradeTabs();
-  const jScores = scores; // shared pool — same for all judges
+  const jScores = scores;
 
   let students = currentResGrade === 'all'
     ? [...allStudents]
@@ -1217,7 +1110,6 @@ async function renderResults() {
     total: getTotal(s.code, jScores[s.code] || {})
   }));
 
-  // Assign rank within the current view
   rows.sort((a,b) => b.total - a.total);
   let rc = 1;
   rows.forEach((r,i) => {
@@ -1244,7 +1136,6 @@ async function renderResults() {
   const dateStr = `ភ្នំពេញ, ថ្ងៃទី ${now.getDate()} ខែ${KH_MONTHS[now.getMonth()]} ឆ្នាំ ${now.getFullYear()}`;
   const gradeLabel = currentResGrade === 'all' ? 'ថ្នាក់ទាំងអស់' : currentResGrade;
 
-  // Sort back to student number order for display
   rows.sort((a,b) => a.no - b.no);
 
   const tableRows = rows.map((r,i) => {
@@ -1262,7 +1153,6 @@ async function renderResults() {
       rankHtml = `<span class="rank-circle ${rc2}">${r.rank}</span>`;
     }
 
-    // Per-criterion scores
     const sc = jScores[r.code] || {};
     const cVals = CRITERIA.map(c => {
       const v = sc[c.key];
@@ -1342,9 +1232,6 @@ async function renderResults() {
   </div>`;
 }
 
-// ================================================================
-// CERTIFICATES — Top 1–5 only
-// ================================================================
 function getNittoes(t) {
   if (t<=0)   return {label:'—',         bg:'#eee',     color:'#888'};
   if (t>=8.5) return {label:'ល្អណាស់',  bg:'#c6f6d5',  color:'#22543d'};
@@ -1363,18 +1250,14 @@ const RANK_INFO = [
 
 async function renderCerts() {
   const gradeVal = document.getElementById('cGrade').value;
-  const jScores  = scores; // shared pool
+  const jScores  = scores;
   const judgeLabel = 'គណៈ​កម្ម​ការ​ទាំង ៥';
-
   const area = document.getElementById('certArea');
-
   const now = new Date();
   const dateStr = `${now.getDate()} ខែ${KH_MONTHS[now.getMonth()]} ឆ្នាំ ${now.getFullYear()}`;
 
   let html = '';
-
   if (gradeVal === 'all') {
-    // Generate top-5 per each grade that has data
     GRADE_LIST.forEach(grade => {
       const students = allStudents.filter(s => s.grade === grade);
       const rows = students
@@ -1418,8 +1301,6 @@ function makeCert(r, rank, judgeVal, dateStr) {
   <div class="certificate ${rankClass}">
     <div class="cert-border-outer"></div>
     <div class="cert-border-inner"></div>
-
-    <!-- RIBBON HEADER -->
     <div class="cert-ribbon">
       <div class="cert-ribbon-top-stripe"></div>
       <div class="cert-ribbon-content">
@@ -1433,34 +1314,24 @@ function makeCert(r, rank, judgeVal, dateStr) {
       </div>
       <div class="cert-ribbon-bottom"></div>
     </div>
-
-    <!-- MEDAL BADGE (overlapping ribbon/body) -->
     <div class="cert-medal-badge">
       <div class="cert-medal-ribbon-bar"></div>
       <div class="cert-medal-circle">${medal}</div>
     </div>
-
-    <!-- BODY -->
     <div class="cert-body">
       <div class="cert-seal"></div>
-
       <div class="cert-rank-label">${rankKmFull} · ${ri.en}</div>
-
       <div class="cert-title-km">បត្រ​សរ​សើរ</div>
       <div class="cert-title-en">Certificate of Achievement</div>
-
       <div class="cert-ornament">
         <div class="cert-ornament-line"></div>
         <span class="cert-ornament-gem">✦</span>
         <div class="cert-ornament-line r"></div>
       </div>
-
       <span class="cert-event-tag">ប្រកួត​អំណាន "ភាសាខ្មែរ" &nbsp;—&nbsp; ២០២៥–២០២៦</span>
-
       <div class="cert-presents">សំ​ដែង​នូវ​ការ​សរ​សើរ​ដ៏​ខ្ពង់​ខ្ពស់​ចំ​ពោះ</div>
       <div class="cert-name">${r.name}</div>
       <div class="cert-name-underline"></div>
-
       <div class="cert-meta">
         <span>${r.grade}</span>
         <span class="cert-meta-dot">◆</span>
@@ -1468,10 +1339,8 @@ function makeCert(r, rank, judgeVal, dateStr) {
         <span class="cert-meta-dot">◆</span>
         <span>${r.sex === 'ប' ? 'ប្រុស' : 'ស្រី'}</span>
         <span class="cert-meta-dot">◆</span>
-        <span>គណៈ​ក.ទី ${judgeVal}</span>
+        <span>${judgeVal}</span>
       </div>
-
-      <!-- Score -->
       <div>
         <div class="cert-score-display">
           <div class="cert-score-label">ពិន្ទុ​សរុប</div>
@@ -1482,12 +1351,9 @@ function makeCert(r, rank, judgeVal, dateStr) {
           </div>
         </div>
       </div>
-
       <div>
         <span class="cert-nit-badge" style="background:${nit.bg};color:${nit.color}">${nit.label}</span>
       </div>
-
-      <!-- Footer -->
       <div class="cert-footer-divider"></div>
       <div class="cert-footer">
         <div class="cert-sig">
@@ -1508,10 +1374,6 @@ function makeCert(r, rank, judgeVal, dateStr) {
 
 function doPrint() { window.print(); }
 
-// ── PDF DOWNLOAD helpers ──
-// We build a minimal standalone HTML page with only the content needed,
-// open it in a new window, trigger print (Save as PDF), then close.
-
 function buildPrintPage(contentHTML, title) {
   const styles = Array.from(document.querySelectorAll('style')).map(s => s.outerHTML).join('\n');
   const links  = Array.from(document.querySelectorAll('link[rel="stylesheet"]')).map(l => l.outerHTML).join('\n');
@@ -1522,62 +1384,30 @@ function buildPrintPage(contentHTML, title) {
     + '@page{margin:10mm;size:A4 portrait;}'
     + '*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}'
     + '</st'+'yle></he'+'ad><bo'+'dy>'
-    + contentHTML
-    + autoprint
+    + contentHTML + autoprint
     + '</bo'+'dy></ht'+'ml>';
 }
 
 function downloadResultsPDF() {
   const content = document.getElementById('reportArea').innerHTML;
-  if (!content || content.trim() === '') {
-    showToast('មិនទាន់មានទិន្នន័យ — សូម​ចូលទំព័រ​លទ្ធផល​ជាមុន');
-    return;
-  }
+  if (!content || content.trim() === '') { showToast('មិនទាន់មានទិន្នន័យ'); return; }
   const gradeLabel = document.querySelector('#resGradeTabs button.active')?.textContent || 'ទាំងអស់';
   const title = `MIKIDS_លទ្ធផល_${gradeLabel}`;
-  // Wrap in report style container
-  const html = `<div style="font-family:'Noto Serif Khmer',serif;">${content}</div>`;
   const win = window.open('', '_blank', 'width=900,height=700');
-  if (!win) { showToast('សូម​អនុញ្ញាត pop-up ក្នុង​ browser'); return; }
-  win.document.write(buildPrintPage(html, title));
+  if (!win) { showToast('សូម​អនុញ្ញាត pop-up'); return; }
+  win.document.write(buildPrintPage(`<div style="font-family:'Noto Serif Khmer',serif;">${content}</div>`, title));
   win.document.close();
-  showToast('🖨️ ជ្រើស "Save as PDF" ក្នុង Print dialog');
 }
 
 function downloadCertPDF() {
   const content = document.getElementById('certArea').innerHTML;
-  if (!content || content.trim() === '') {
-    showToast('មិនទាន់មានទិន្នន័យ — សូម​ចូលទំព័រ​បត្រ​ជាមុន');
-    return;
-  }
+  if (!content || content.trim() === '') { showToast('មិនទាន់មានទិន្នន័យ'); return; }
   const gradeVal = document.getElementById('cGrade').value;
   const title = `MIKIDS_បត្រសរសើរ_${gradeVal === 'all' ? 'ទាំងអស់' : gradeVal}`;
-  // Cert-specific print styles: 1 per page
-  const certPrintStyle = '<st'+'yle>'
-    + '.cert-area-wrap{max-width:100%!important;margin:0!important;}'
-    + '.cert-grid{display:block!important;}'
-    + '.cert-grid>.certificate{page-break-before:always;break-before:page;page-break-after:always;break-after:page;width:100%!important;height:calc(297mm - 20mm)!important;min-height:unset!important;box-shadow:none!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;}'
-    + '.cert-grid>.certificate:first-child{page-break-before:auto;break-before:auto;}'
-    + '.cert-body{flex:1!important;display:flex!important;flex-direction:column!important;justify-content:center!important;padding:16px 48px 24px!important;}'
-    + '.cert-ribbon{flex-shrink:0;}'
-    + '.cert-ribbon-content{padding:20px 40px 18px!important;}'
-    + '.cert-ribbon-logo{width:70px!important;height:70px!important;}'
-    + '.cert-title-km{font-size:36px!important;}'
-    + '.cert-name{font-size:30px!important;}'
-    + '.cert-medal-circle{width:80px!important;height:80px!important;font-size:48px!important;}'
-    + '.cert-score-value{font-size:28px!important;}'
-    + '.cert-nit-badge{font-size:16px!important;padding:6px 28px!important;}'
-    + '.cert-presents{font-size:14px!important;}'
-    + '.cert-meta{font-size:13px!important;}'
-    + '.cert-sig-name{font-size:14px!important;}'
-    + '.cert-footer-date{font-size:13px!important;}'
-    + '</st'+'yle>';
-  const html = certPrintStyle + content;
   const win = window.open('', '_blank', 'width=900,height=700');
-  if (!win) { showToast('សូម​អនុញ្ញាត pop-up ក្នុង​ browser'); return; }
-  win.document.write(buildPrintPage(html, title));
+  if (!win) { showToast('សូម​អនុញ្ញាត pop-up'); return; }
+  win.document.write(buildPrintPage(content, title));
   win.document.close();
-  showToast('🖨️ ជ្រើស "Save as PDF" ក្នុង Print dialog');
 }
 
 function exportCSV() {
@@ -1591,7 +1421,7 @@ function exportCSV() {
   const blob = new Blob(['\ufeff'+[headers.join(','),...rows].join('\n')],{type:'text/csv;charset=utf-8;'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `MIKIDS_scores_shared.csv`;
+  a.download = `MIKIDS_scores.csv`;
   a.click();
   showToast('Export CSV ជោគជ័យ!');
 }
