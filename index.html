@@ -394,11 +394,20 @@ function updateKhSemRow(row,allRows){
 }
 
 function updateKhRanks(rows){
-  const arr=Array.from(rows).map(r=>({row:r,avg:r._semAvg||0}));
-  arr.sort((a,b)=>b.avg-a.avg);
+  const arr=Array.from(rows).map((r,i)=>({row:r,avg:r._semAvg||0,idx:i}));
+  arr.sort((a,b)=>b.avg-a.avg||a.idx-b.idx);
+  let rank=1;
   arr.forEach((item,i)=>{
     const cell=item.row.querySelector('.kh-rank');
-    if(cell) cell.textContent = item.avg>0 ? (i+1) : '—';
+    if(!cell)return;
+    if(item.avg<=0){cell.textContent='—';return;}
+    // same avg as previous → same rank
+    if(i>0&&item.avg===arr[i-1].avg){
+      cell.textContent=arr[i-1].row.querySelector('.kh-rank').textContent;
+    } else {
+      rank=i+1;
+      cell.textContent=rank;
+    }
   });
 }
 
@@ -428,11 +437,19 @@ function updateEnSemRow(row,allRows){
 }
 
 function updateEnRanks(rows){
-  const arr=Array.from(rows).map(r=>({row:r,avg:r._avg||0}));
-  arr.sort((a,b)=>b.avg-a.avg);
+  const arr=Array.from(rows).map((r,i)=>({row:r,avg:r._avg||0,idx:i}));
+  arr.sort((a,b)=>b.avg-a.avg||a.idx-b.idx);
+  let rank=1;
   arr.forEach((item,i)=>{
     const cell=item.row.querySelector('.en-rank');
-    if(cell) cell.textContent = item.avg>0 ? (i+1) : '—';
+    if(!cell)return;
+    if(item.avg<=0){cell.textContent='—';return;}
+    if(i>0&&item.avg===arr[i-1].avg){
+      cell.textContent=arr[i-1].row.querySelector('.en-rank').textContent;
+    } else {
+      rank=i+1;
+      cell.textContent=rank;
+    }
   });
 }
 
